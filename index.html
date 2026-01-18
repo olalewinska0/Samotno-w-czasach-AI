@@ -162,6 +162,7 @@
     	height: 360px;          
     	overflow: hidden;
     	border-radius: 24px;
+		position: relative;
 	}
 	
 	.map-mask iframe {
@@ -170,6 +171,13 @@
     	border: 0;
     	transform: translateY(-80px); 
 	}
+
+		@media (max-width: 768px) {
+    .map-mask iframe {
+        transform: translateY(-40px);
+    }
+	}
+
 
 	@media (max-width: 768px) {
 
@@ -237,6 +245,13 @@
 
 .image-card h2 {
     text-align: left;
+}
+
+		.image-card img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    object-fit: contain;
 }
 
 
@@ -368,6 +383,7 @@
 
 </body>
 </html>
+
 
 
 
